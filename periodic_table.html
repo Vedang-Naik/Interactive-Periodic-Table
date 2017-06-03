@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Interactive Periodic Table</title>
+        
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+        
+        <script src="periodic_table.js"></script>
+        <script src="elements.js"></script>
+        <link rel="stylesheet" href="periodic_table.css">
+    </head>
+    <body>
+        <div id="periodic_table">
+            <table>
+                <tr>
+                    <td id="H"><img src="ElementTiles/01-Hydrogen-Tile.png"></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="8" rowspan="3" id="info_holder">
+                        
+                        <div id="information">
+                            
+                            <h3 id="E_Heading">Hydrogen</h3>
+                            <p id="E_Info">Hydrogen is the lightest element on the periodic table.
+                                            Its monatomic form (H) is the most abundant chemical substance in
+                                            the Universe, constituting roughly 75% of all baryonic mass.</p>
+                                            
+                            <table id="info_table">
+                                <tr>
+                                    <td><strong>Melting Point: </strong></td>
+                                    <td id="mp" class="info_cells">-252.9&ordm Celsius</td>
+                                    <td><strong>Radioactivity: </strong></td>
+                                    <td id="radio">False</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Boiling Point: </strong></td>
+                                    <td id="bp" class="info_cells">-252.9&ordm Celsius</td>
+                                    <td><strong>Discovered in: </strong></td>
+                                    <td id="dis_time">1766</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Density: </strong></td>
+                                    <td id="de" class="info_cells">0.08988 g/L</td>
+                                    <td><strong>Discoverer: </strong></td>
+                                    <td id="dis_people">Henry Cavendish</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Electronic Configuration: </strong></td>
+                                    <td id="ec" class="info_cells">1s1</td>
+                                    <td><strong>Wikipedia Link: </strong></td>
+                                    <td id="wiki_link"><a href='https://en.wikipedia.org/wiki/Hydrogen'>Hydrogen</a></td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        
+                    </td>
+                    <td colspan="6"></td>
+                    <td id="He"><img src="ElementTiles/02-Helium-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td id="Li"><img src="ElementTiles/03-Lithium-Tile.png"></td>
+                    <td id=Be><img src="ElementTiles/04-Beryllium-Tile.png"></td>
+                    <td colspan="10"></td>
+                    <td id="B"><img src="ElementTiles/05-Boron-Tile.png"></td>
+                    <td id="C"><img src="ElementTiles/06-Carbon-Tile.png"></td>
+                    <td id="N"><img src="ElementTiles/07-Nitrogen-Tile.png"></td>
+                    <td id="O"><img src="ElementTiles/08-Oxygen-Tile.png"></td>
+                    <td id="F"><img src="ElementTiles/09-Fluorine-Tile.png"></td>
+                    <td id="Ne"><img src="ElementTiles/10-Neon-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td id="Na"><img src="ElementTiles/11-Sodium-Tile.png"></td>
+                    <td id="Mg"><img src="ElementTiles/12-Magnesium-Tile.png"></td>
+                    <td colspan="10"></td>
+                    <td id="Al"><img src="ElementTiles/13-Aluminum-Tile.png"></td>
+                    <td id="Si"><img src="ElementTiles/14-Silicon-Tile.png"></td>
+                    <td id="P"><img src="ElementTiles/15-Phosphorus-Tile.png"></td>
+                    <td id="S"><img src="ElementTiles/16-Sulfur-Tile.png"></td>
+                    <td id="Cl"><img src="ElementTiles/17-Chlorine-Tile.png"></td>
+                    <td id="Ar"><img src="ElementTiles/18-Argon-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td id="K"><img src="ElementTiles/19-Potassium-Tile.png"></td>
+                    <td id="Ca"><img src="ElementTiles/20-Calcium-Tile.png"></td>
+                    <td id="Sc"><img src="ElementTiles/21-Scandium-Tile.png"></td>
+                    <td id="Ti"><img src="ElementTiles/22-Titanium-Tile.png"></td>
+                    <td id="V"><img src="ElementTiles/23-Vanadium-Tile.png"></td>
+                    <td id="Cr"><img src="ElementTiles/24-Chromium-Tile.png"></td>
+                    <td id="Mn"><img src="ElementTiles/25-Manganese-Tile.png"></td>
+                    <td id="Fe"><img src="ElementTiles/26-Iron-Tile.png"></td>
+                    <td id="Co"><img src="ElementTiles/27-Cobalt-Tile.png"></td>
+                    <td id="Ni"><img src="ElementTiles/28-Nickel-Tile.png"></td>
+                    <td id="Cu"><img src="ElementTiles/29-Copper-Tile.png"></td>
+                    <td id="Zn"><img src="ElementTiles/30-Zinc-Tile.png"></td>
+                    <td id="Ga"><img src="ElementTiles/31-Gallium-Tile.png"></td>
+                    <td id="Ge"><img src="ElementTiles/32-Germanium-Tile.png"></td>
+                    <td id="As"><img src="ElementTiles/33-Arsenic-Tile.png"></td>
+                    <td id="Se"><img src="ElementTiles/34-Selenium-Tile.png"></td>
+                    <td id="Br"><img src="ElementTiles/35-Bromine-Tile.png"></td>
+                    <td id="Kr"><img src="ElementTiles/36-Krypton-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td id="Rb"><img src="ElementTiles/37-Rubidium-Tile.png"></td>
+                    <td id="Sr"><img src="ElementTiles/38-Strontium-Tile.png"></td>
+                    <td id="Y"><img src="ElementTiles/39-Yttrium-Tile.png"></td>
+                    <td id="Zr"><img src="ElementTiles/40-Zirconium-Tile.png"></td>
+                    <td id="Nb"><img src="ElementTiles/41-Niobium-Tile.png"></td>
+                    <td id="Mo"><img src="ElementTiles/42-Molybdenum-Tile.png"></td>
+                    <td id="Tc"><img src="ElementTiles/43-Technetium-Tile.png"></td>
+                    <td id="Ru"><img src="ElementTiles/44-Ruthenium-Tile.png"></td>
+                    <td id="Rh"><img src="ElementTiles/45-Rhodium-Tile.png"></td>
+                    <td id="Pd"><img src="ElementTiles/46-Palladium-Tile.png"></td>
+                    <td id="Ag"><img src="ElementTiles/47-Silver-Tile.png"></td>
+                    <td id="Cd"><img src="ElementTiles/48-Cadmium-Tile.png"></td>
+                    <td id="In"><img src="ElementTiles/49-Indium-Tile.png"></td>
+                    <td id="Sn"><img src="ElementTiles/50-Tin-Tile.png"></td>
+                    <td id="Sb"><img src="ElementTiles/51-Antimony-Tile.png"></td>
+                    <td id="Te"><img src="ElementTiles/52-Tellurium-Tile.png"></td>
+                    <td id="I"><img src="ElementTiles/53-Iodine-Tile.png"></td>
+                    <td id="Xe"><img src="ElementTiles/54-Xenon-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td id="Cs"><img src="ElementTiles/55-Cesium-Tile.png"></td>
+                    <td id="Ba"><img src="ElementTiles/56-Barium-Tile.png"></td>
+                    <td><img src="ElementTiles/Lanthanides-Tile.png"></td>
+                    <td id="Hf"><img src="ElementTiles/72-Hafnium-Tile.png"></td>
+                    <td id="Ta"><img src="ElementTiles/73-Tantalum-Tile.png"></td>
+                    <td id="W"><img src="ElementTiles/74-Tungsten-Tile.png"></td>
+                    <td id="Re"><img src="ElementTiles/75-Rhenium-Tile.png"></td>
+                    <td id="Os"><img src="ElementTiles/76-Osmium-Tile.png"></td>
+                    <td id="Ir"><img src="ElementTiles/77-Iridium-Tile.png"></td>
+                    <td id="Pt"><img src="ElementTiles/78-Platinum-Tile.png"></td>
+                    <td id="Au"><img src="ElementTiles/79-Gold-Tile.png"></td>
+                    <td id="Hg"><img src="ElementTiles/80-Mercury-Tile.png"></td>
+                    <td id="Tl"><img src="ElementTiles/81-Thallium-Tile.png"></td>
+                    <td id="Pb"><img src="ElementTiles/82-Lead-Tile.png"></td>
+                    <td id="Bi"><img src="ElementTiles/83-Bismuth-Tile.png"></td>
+                    <td id="Po"><img src="ElementTiles/84-Polonium-Tile.png"></td>
+                    <td id="At"><img src="ElementTiles/85-Astatine-Tile.png"></td>
+                    <td id="Rn"><img src="ElementTiles/86-Radon-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td id="Fr"><img src="ElementTiles/87-Francium-Tile.png"></td>
+                    <td id="Ra"><img src="ElementTiles/88-Radium-Tile.png"></td>
+                    <td><img src="ElementTiles/Actinides-Tile.png"></td>
+                    <td id="Rf"><img src="ElementTiles/104-Rutherfordium-Tile.png"></td>
+                    <td id="Db"><img src="ElementTiles/105-Dubnium-Tile.png"></td>
+                    <td id="Sg"><img src="ElementTiles/106-Seaborgium-Tile.png"></td>
+                    <td id="Bh"><img src="ElementTiles/107-Bohrium-Tile.png"></td>
+                    <td id="Hs"><img src="ElementTiles/108-Hassium-Tile.png"></td>
+                    <td id="Mt"><img src="ElementTiles/109-Meitnerium-Tile.png"></td>
+                    <td id="Ds"><img src="ElementTiles/110-Darmstadtium-Tile.png"></td>
+                    <td id="Rg"><img src="ElementTiles/111-Roentgenium-Tile.png"></td>
+                    <td id="Cn"><img src="ElementTiles/112-Copernicium-Tile.png"></td>
+                    <td id="Uut"><img src="ElementTiles/113-Ununtrium-Tile.png"></td>
+                    <td id="Fl"><img src="ElementTiles/114-Flerovium-Tile.png"></td>
+                    <td id="Uup"><img src="ElementTiles/115-Ununpentium-Tile.png"></td>
+                    <td id="Lv"><img src="ElementTiles/116-Livermorium-Tile.png"></td>
+                    <td id="Uus"><img src="ElementTiles/117-Ununseptium-Tile.png"></td>
+                    <td id="Uuo"><img src="ElementTiles/118-Ununoctium-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td colspan="18"><div style="height: 25px;"></div></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td id="La"><img src="ElementTiles/57-Lanthanum-Tile.png"></td>
+                    <td id="Ce"><img src="ElementTiles/58-Cerium-Tile.png"></td>
+                    <td id="Pr"><img src="ElementTiles/59-Praseodymium-Tile.png"></td>
+                    <td id="Nd"><img src="ElementTiles/60-Neodymium-Tile.png"></td>
+                    <td id="Pm"><img src="ElementTiles/61-Promethium-Tile.png"></td>
+                    <td id="Sm"><img src="ElementTiles/62-Samarium-Tile.png"></td>
+                    <td id="Eu"><img src="ElementTiles/63-Europium-Tile.png"></td>
+                    <td id="Gd"><img src="ElementTiles/64-Gadolinium-Tile.png"></td>
+                    <td id="Tb"><img src="ElementTiles/65-Terbium-Tile.png"></td>
+                    <td id="Dy"><img src="ElementTiles/66-Dysprosium-Tile.png"></td>
+                    <td id="Ho"><img src="ElementTiles/67-Holmium-Tile.png"></td>
+                    <td id="Er"><img src="ElementTiles/68-Erbium-Tile.png"></td>
+                    <td id="Tm"><img src="ElementTiles/69-Thulium-Tile.png"></td>
+                    <td id="Yb"><img src="ElementTiles/70-Ytterbium-Tile.png"></td>
+                    <td id="Lu"><img src="ElementTiles/71-Lutetium-Tile.png"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td id="Ac"><img src="ElementTiles/89-Actinium-Tile.png"></td>
+                    <td id="Th"><img src="ElementTiles/90-Thorium-Tile.png"></td>
+                    <td id="Pa"><img src="ElementTiles/91-Protactinium-Tile.png"></td>
+                    <td id="U"><img src="ElementTiles/92-Uranium-Tile.png"></td>
+                    <td id="Np"><img src="ElementTiles/93-Neptunium-Tile.png"></td>
+                    <td id="Pu"><img src="ElementTiles/94-Plutonium-Tile.png"></td>
+                    <td id="Am"><img src="ElementTiles/95-Americium-Tile.png"></td>
+                    <td id="Cm"><img src="ElementTiles/96-Curium-Tile.png"></td>
+                    <td id="Bk"><img src="ElementTiles/97-Berkelium-Tile.png"></td>
+                    <td id="Cf"><img src="ElementTiles/98-Californium-Tile.png"></td>
+                    <td id="Es"><img src="ElementTiles/99-Einsteinium-Tile.png"></td>
+                    <td id="Fm"><img src="ElementTiles/100-Fermium-Tile.png"></td>
+                    <td id="Md"><img src="ElementTiles/101-Mendelevium-Tile.png"></td>
+                    <td id="No"><img src="ElementTiles/102-Nobelium-Tile.png"></td>
+                    <td id="Lr"><img src="ElementTiles/103-Lawrencium-Tile.png"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

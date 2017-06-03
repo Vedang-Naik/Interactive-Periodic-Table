@@ -1,0 +1,142 @@
+function InfoViewUpdater(element) {
+    var element_props = elements[element]
+    $("#E_Heading").html(element_props[0]);
+    $("#E_Info").html(element_props[1]);
+    $("#mp").html(element_props[2]);
+    $("#bp").html(element_props[3]);
+    $("#de").html(element_props[4]);
+    $("#ec").html(element_props[5]);
+    $("#radio").html(element_props[6]);
+    $("#dis_time").html(element_props[7]);
+    $("#dis_people").html(element_props[8]);
+    $("#wiki_link").html(element_props[9]);
+}
+
+$(document).ready(function () {
+    $("#H").on("click", function() {InfoViewUpdater(this.id);});
+    $("#He").on("click", function() {InfoViewUpdater(this.id);});
+    
+    $("#Li").on("click", function() {InfoViewUpdater(this.id);});
+    $("#Be").on("click", function() {InfoViewUpdater(this.id);});
+    $("#B").on("click", function() {InfoViewUpdater(this.id);});
+    $("#C").on("click", function() {InfoViewUpdater(this.id);});
+    $("#N").on("click", function() {InfoViewUpdater(this.id);});
+    $("#O").on("click", function() {InfoViewUpdater(this.id);});
+    $("#F").on("click", function() {InfoViewUpdater(this.id);});
+    $("#Ne").on("click", function() {InfoViewUpdater(this.id);});
+    
+    $("#Na").on("click", function() {});
+    $("#Mg").on("click", function() {});
+    $("#Al").on("click", function() {});
+    $("#Si").on("click", function() {});
+    $("#P").on("click", function() {});
+    $("#S").on("click", function() {});
+    $("#Cl").on("click", function() {});
+    $("#Ar").on("click", function() {});
+    
+    $("#K").on("click", function() {});
+    $("#Ca").on("click", function() {});
+    $("#Sc").on("click", function() {});
+    $("#Ti").on("click", function() {});
+    $("#V").on("click", function() {});
+    $("#Cr").on("click", function() {});
+    $("#Mn").on("click", function() {});
+    $("#Fe").on("click", function() {});
+    $("#Co").on("click", function() {});
+    $("#Ni").on("click", function() {});
+    $("#Cu").on("click", function() {});
+    $("#Zn").on("click", function() {});
+    $("#Ga").on("click", function() {});
+    $("#Ge").on("click", function() {});
+    $("#As").on("click", function() {});
+    $("#Se").on("click", function() {});
+    $("#Br").on("click", function() {});
+    $("#Kr").on("click", function() {});
+    
+    $("#Rb").on("click", function() {});
+    $("#Sr").on("click", function() {});
+    $("#Y").on("click", function() {});
+    $("#Zr").on("click", function() {});
+    $("#Nb").on("click", function() {});
+    $("#Mo").on("click", function() {});
+    $("#Tc").on("click", function() {});
+    $("#Ru").on("click", function() {});
+    $("#Rh").on("click", function() {});
+    $("#Pd").on("click", function() {});
+    $("#Ag").on("click", function() {});
+    $("#Cd").on("click", function() {});
+    $("#In").on("click", function() {});
+    $("#Sn").on("click", function() {});
+    $("#Sb").on("click", function() {});
+    $("#Te").on("click", function() {});
+    $("#I").on("click", function() {});
+    $("#Xe").on("click", function() {});
+    
+    $("#Cs").on("click", function() {});
+    $("#Ba").on("click", function() {});
+    $("#Hf").on("click", function() {});
+    $("#Ta").on("click", function() {});
+    $("#W").on("click", function() {});
+    $("#Re").on("click", function() {});
+    $("#Os").on("click", function() {});
+    $("#Ir").on("click", function() {});
+    $("#Pt").on("click", function() {});
+    $("#Au").on("click", function() {});
+    $("#Hg").on("click", function() {});
+    $("#Tl").on("click", function() {});
+    $("#Pb").on("click", function() {});
+    $("#Bi").on("click", function() {});
+    $("#Po").on("click", function() {});
+    $("#At").on("click", function() {});
+    $("#Rn").on("click", function() {});
+    
+    $("#Fr").on("click", function() {});
+    $("#Ra").on("click", function() {});
+    $("#Rf").on("click", function() {});
+    $("#Db").on("click", function() {});
+    $("#Sg").on("click", function() {});
+    $("#Bh").on("click", function() {});
+    $("#Hs").on("click", function() {});
+    $("#Mt").on("click", function() {});
+    $("#Ds").on("click", function() {});
+    $("#Rg").on("click", function() {});
+    $("#Cn").on("click", function() {});
+    $("#Uut").on("click", function() {});
+    $("#Fl").on("click", function() {});
+    $("#Uup").on("click", function() {});
+    $("#Lv").on("click", function() {});
+    $("#Uus").on("click", function() {});
+    $("#Uuo").on("click", function() {});
+    
+    $("#La").on("click", function() {});
+    $("#Ce").on("click", function() {});
+    $("#Pr").on("click", function() {});
+    $("#Nd").on("click", function() {});
+    $("#Pm").on("click", function() {});
+    $("#Sm").on("click", function() {});
+    $("#Eu").on("click", function() {});
+    $("#Gd").on("click", function() {});
+    $("#Tb").on("click", function() {});
+    $("#Dy").on("click", function() {});
+    $("#Ho").on("click", function() {});
+    $("#Er").on("click", function() {});
+    $("#Tm").on("click", function() {});
+    $("#Yb").on("click", function() {});
+    $("#Lu").on("click", function() {});
+    
+    $("#Ac").on("click", function() {});
+    $("#Th").on("click", function() {});
+    $("#Pa").on("click", function() {});
+    $("#U").on("click", function() {});
+    $("#Np").on("click", function() {});
+    $("#Pu").on("click", function() {});
+    $("#Am").on("click", function() {});
+    $("#Cm").on("click", function() {});
+    $("#Bk").on("click", function() {});
+    $("#Cf").on("click", function() {});
+    $("#Es").on("click", function() {});
+    $("#Fm").on("click", function() {});
+    $("#Md").on("click", function() {});
+    $("#No").on("click", function() {});
+    $("#Lr").on("click", function() {});
+});

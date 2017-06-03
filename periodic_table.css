@@ -1,0 +1,45 @@
+#periodic_table {
+    width: 1425px;
+    height: 774px;
+    padding: 30px;
+    /*border: 1px solid black;*/
+}
+
+img {
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+#information {
+    /*border: 1px solid black;*/
+    height: 240px;
+    width: 625px;
+}
+
+#E_Heading {
+    text-align: center;
+    font-family: "Verdana";
+}
+
+#E_Info {
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 13px;
+}
+
+#info_table {
+    /*border: 1px solid black;*/
+    margin: auto;
+    font-family: "Verdana";
+    font-size: 13px;
+    
+}
+
+#info_table td {
+    /*padding: 7.5px;*/
+}
+
+.info_cells {
+    padding-right: 15px !important;
+}
